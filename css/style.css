@@ -1,0 +1,111 @@
+/***************  Start General Layout ***************/
+* { box-sizing: border-box }
+nav, section, footer { border: 1px solid #f00; }
+h1 { margin: 0 }
+h2 {
+  margin-bottom: 60px;
+}
+li {
+  list-style: none;
+}
+section{
+    padding-top:50px;
+    padding-bottom:50px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+h2,
+footer { text-align: center }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***************  End General Layout ***************/
+/***************  Start home image ***************/
+.image1{
+  background-image: url("../images/voorbeeld1.jpg");
+
+
+
+}
+.image1 h2{
+  padding-top:150px;
+  padding-bottom:150px;
+
+}
+
+/***************  End home image ***************/
+
+/***************  Start NavBar ***************/
+nav {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+nav h1 {
+  float: left;
+  margin-top: 6px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav h1,
+nav ul {
+  vertical-align: top;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+
+/***************  End NavBar ***************/
+
+/***************  Start ons team ***************/
+
+.teamlid {
+  float: left;
+  width: 25%;
+
+}
+
+.teamlid div{
+    border: 2px solid #888;
+    height: 200px;
+    width:  200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+/***************  End ons team ***************/
+
+/***************  Start contact ***************/
+
+.contact{
+    float: right;
+    margin-right: -100px;
+
+}
+.social-media{
+  width: 40%;
+
+}
+.map{
+  width: 55%;
+}
+/***************  End contact ***************/
+
