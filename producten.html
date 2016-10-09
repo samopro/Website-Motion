@@ -157,8 +157,8 @@
       for(var i = 0; i < closeButtons.length; i++) {
         closeButtons[i].addEventListener("click", function() {
           var overlay = this.closest('.overlay');
-          popup.style.visibility = "hidden";
-          popup.style.opacity = 0;
+          overlay.style.visibility = "hidden";
+          overlay.style.opacity = 0;
         });
       }
 
