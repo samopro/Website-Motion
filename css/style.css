@@ -178,6 +178,7 @@ nav ul li {
 .popup .content {
   max-height: 30%;
   overflow: auto;
+  text-align:center;
 }
 
 .overlay {
