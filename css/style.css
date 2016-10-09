@@ -162,7 +162,7 @@ nav ul li {
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup #close {
+.popup .close {
   position: absolute;
   top: 20px;
   right: 30px;

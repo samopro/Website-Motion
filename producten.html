@@ -149,11 +149,15 @@
 
       var productImages = document.querySelectorAll('.product-image');
 
-      var close = document.querySelector('#close');
+      var closeButtons = document.querySelectorAll('.close');
 
-      close.addEventListener("click", function() {
-        this.closest('')
-      });
+      for(var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function() {
+          var overlay = this.closest('.overlay');
+          popup.style.visibility = "hidden";
+          popup.style.opacity = 0;
+        });
+      }
 
       for(var i = 0; i < productImages.length; i++) {
 
