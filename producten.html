@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>Motion-Breda</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <!--   Start NavBar   -->
+    <nav>
+      <div class="container clearfix">
+        <h1>Motion</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="producten.html">Producten</a></li>
+          <li><a href="over.html">Over Ons</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  <!--  End Navbar    -->
+
+  <!-- Start producten -->
+    <section>
+    <h2>Onze Producten</h2>
+      <div class="container clearfix">
+        <div id="product-images">
+          <div data-popid="#popup1" class="product-image" style="background-image:url(images/producten1.jpg)"></div>
+          <div data-popid="#popup2" class="product-image" style="background-image:url(images/producten2.jpg)"></div>
+          <div data-popid="#popup3" class="product-image" style="background-image:url(images/producten3.jpg)"></div>
+          <div data-popid="#popup4" class="product-image" style="background-image:url(images/producten1.jpg)"></div>
+          <div data-popid="#popup5" class="product-image" style="background-image:url(images/producten2.jpg)"></div>
+          <div data-popid="#popup6" class="product-image" style="background-image:url(images/producten3.jpg)"></div>
+          <div data-popid="#popup7" class="product-image" style="background-image:url(images/producten1.jpg)"></div>
+          <div data-popid="#popup8" class="product-image" style="background-image:url(images/producten2.jpg)"></div>
+          <div data-popid="#popup9" class="product-image" style="background-image:url(images/producten3.jpg)"></div>
+        </div>
+      </div>
+    </section>
+
+  <!-- End producten -->
+
+    <!--  Start footer   -->
+    <footer>
+     <div class="container">
+      <span>Motion &copy;2016</span>
+      </div>
+   </footer>
+  <!--   End footer   -->
+
+  <!--    Pop ups    -->
+    <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Angry Bird paal Rood</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        €2900.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup2" class="overlay">
+    <div class="popup">
+      <h2>Test2</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Test2.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup3" class="overlay">
+    <div class="popup">
+      <h2>Klimtoestel</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        <p>Dit complete speeltoestel is een ware droom voor ieder actief kind.</p>
+        <a href="contact.html"><p>Prijs op aanvraag.</p></a>
+
+      </div>
+    </div>
+  </div>
+
+    <div id="popup4" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup5" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup6" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup7" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup8" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <div id="popup9" class="overlay">
+    <div class="popup">
+      <h2>Here i am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        Thank to pop me out of that button, but now i'm done so you can close this window.
+      </div>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+
+      var popup = document.querySelector('.overlay');
+
+      var productImages = document.querySelectorAll('.product-image');
+
+      var close = document.querySelector('#close');
+
+      close.addEventListener("click", function() {
+        this.closest('')
+      });
+
+      for(var i = 0; i < productImages.length; i++) {
+
+        productImages[i].addEventListener("click", function() {
+
+                    var popupId = this.getAttribute("data-popid");
+
+                    var popup = document.querySelector(popupId);
+
+                    popup.style.visibility = "visible";
+                    popup.style.opacity = 1;
+
+//                 popup.style.visibility = "visible";
+//                 popup.style.opacity = 1;
+
+        });
+      }
+
+
+
+    </script>
+  </body>
+</html>
