@@ -8,19 +8,25 @@ body { padding-top: 70px; }
 
 .product-image {
 
-  width:33%;
+  width:30%;
   height:350px;
 
   display:inline-block;
 
   background-repeat:no-repeat;
 
-  border:2px solid black;
+  margin:1%;
+
+  border-radius: 3%;
+
+  border:2px solid #eaeaea;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  cursor:pointer;
 
 }
 
