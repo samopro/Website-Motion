@@ -5,6 +5,9 @@
     <title>Motion-Breda</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
   <!--   Start NavBar   -->
@@ -12,26 +15,32 @@
       <div class="container clearfix">
         <h1>Motion</h1>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="producten.html">Producten</a></li>
-          <li><a href="over.html">Over Ons</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#over-ons">Over Ons</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   <!--  End Navbar    -->
 
   <!--   Start Home -->
-     <section class="image1">
-       <h2> Test </h2>
+     <section class="image1" id="home">
        <div class="container">
+         <h2> Stay in Motion </h2>
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Amet, atque minima incidunt quos libero alias dolorum, necessitatibus ducimus voluptatum placeat asperiores ab sunt accusantium sequi cumque,
+             saepe laudantium quo quas. Deleniti perferendis rerum sit consequuntur animi ipsa nemo doloremque, corporis distinctio atque quo saepe,
+              dolore eius praesentium esse eveniet facere!
+         </p>
        </div>
      </section>
   <!--   End Home   -->
 
   <!-- Start Over Ons   -->
-    <section>
+    <section id="over-ons">
       <h2>Over Ons</h2>
       <div class="container">
         <p>
@@ -43,7 +52,7 @@
     </section>
   <!-- End Over Ons   -->
    <!-- Start Ons Team   -->
-    <section>
+    <section id="team">
       <h2>Ons Team</h2>
       <div class="container clearfix">
         <div class="teamlid">
@@ -75,15 +84,18 @@
   <!-- End Ons team   -->
 
    <!--  Start Contact   -->
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <div class="container clearfix">
         <div class="map contact">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.1399563658324!2d4.795046316127376!3d51.583998279647886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6a1d7942a1a21%3A0x46b0efbbbd6471c7!2sAvans+Hogeschool!5e0!3m2!1snl!2snl!4v1475772047432" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.1399563658324!2d4.795046316127376!3d51.583998279647886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6a1d7942a1a21%3A0x46b0efbbbd6471c7!2sAvans+Hogeschool!5e0!3m2!1snl!2snl!4v1475772047432" allowfullscreen></iframe>
+        </div>
         <div class="social-media contact">
-          <h3>Volg Ons <h3>
+          <h3>Volg Ons</h3>
+          <a href="#"><i class="fa fa-facebook-square fa-4x"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-4x"></i></a>
+          <a href="#"><i class="fa fa-flickr fa-4x"></i></a>
+          <a href="#"><i class="fa fa-github-square fa-4x"></i></a>
         </div>
       </div>
     </section>
@@ -96,5 +108,11 @@
       </div>
    </footer>
   <!--   End footer   -->
+
+    <!-- jQuery Library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- My Custom Js script -->
+    <script src="js/myplugins.js"></script>
   </body>
 </html>

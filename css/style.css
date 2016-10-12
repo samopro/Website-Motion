@@ -1,16 +1,22 @@
 /***************  Start General Layout ***************/
 * { box-sizing: border-box }
-nav, section, footer { border: 1px solid #f00; }
-h1 { margin: 0 }
-h2 {
-  margin-bottom: 60px;
+body{
+  font-family: 'Lato';
+  color: #5B5555;
 }
+/*nav, section, footer { border: 1px solid #f00; }*/
+/*h1 { margin: 0; font-family: 'Bubblegum Sans';}*/
+h2 {
+  margin-bottom: 80px;
+  font-size: 42px;
+}
+h2, h3 { color: #333; }
 li {
   list-style: none;
 }
 section{
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:70px;
+    padding-bottom:70px;
 
 }
 
@@ -36,14 +42,33 @@ footer { text-align: center }
 /***************  Start home image ***************/
 .image1{
   background-image: url("../images/voorbeeld1.jpg");
-
-
-
+  min-height: 700px;
 }
 .image1 h2{
-  padding-top:150px;
-  padding-bottom:150px;
+  /*padding-top:50px;
+  padding-bottom:50px;*/
+  padding: 10px 0;
+  width: 30%;
+  margin: auto;
+  margin-top: 300px;
+  margin-bottom: 30px;
+  background-color: rgba(31, 166, 145, 0.7);
+  font-weight: normal;
+}
 
+.image1 p {
+  background-color: rgba(40, 46, 48, 0.6);
+  font-size: 1.3em;
+  line-height: 1.3em;
+  padding: 10px 20px;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.image1 h2,
+.image1 p {
+  color: #fff;
 }
 
 /***************  End home image ***************/
@@ -52,10 +77,28 @@ footer { text-align: center }
 nav {
   padding-top: 15px;
   padding-bottom: 20px;
+  background-color: #1FA67A;
+  color: #fff;
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+/*   height: 1px; */
+
 }
+
+nav .container {
+  position: relative;
+}
+
 nav h1 {
+  font-family: 'Bubblegum Sans';
+  margin: 0;
   float: left;
-  margin-top: 6px;
+  font-size: 65px;
+  position: absolute;
+  left: -36px;
+  top: 3px;
 }
 
 nav ul {
@@ -69,11 +112,41 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 26px;
+  font-size: 32px;
 }
 
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  /*display: block;*/
+  padding-bottom: 10px;
+  border-width: 0;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
 
 /***************  End NavBar ***************/
+
+section#over-ons {
+  background-color: #F2F2F2;
+}
+
+#over-ons p {
+  font-size: 1.3em;
+  margin-top: -10px;
+  line-height: 1.3em;
+}
+
+/***************  Start Over Ons ***************/
+/***************  End Over Ons ***************/
 
 /***************  Start ons team ***************/
 
@@ -95,106 +168,53 @@ nav ul li {
 
 /***************  Start contact ***************/
 
+section#contact {
+    background-color: #F2F2F2;
+}
+
 .contact{
     float: right;
-    margin-right: -100px;
-
 }
 .social-media{
   width: 40%;
-
+  text-align: center;
+  margin-right: 100px;
 }
+
+.social-media h3 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media i {
+  color: #1B926C
+}
+
 .map{
   width: 55%;
+  margin-right: -100px;
+}
+
+.map iframe {
+  width: 90%;
+  height: 350px;
+  border: 8px solid #fff;
+  box-shadow: 0 3px 5px #888;
 }
 /***************  End contact ***************/
 
-/***************  Start product ***************/
+/***************  Start Footer ***************/
 
-#product-images {
-  margin:0 auto !important;
-  width:80%;
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #313233;
 }
 
-.product-image {
-
-  width:33%;
-  height:350px;
-
-  display:inline-block;
-
-  background-repeat:no-repeat;
-
-  border:2px solid black;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
-
-@media screen and (max-width: 900px) {
-
-  .product-image {
-    display:block;
-    width:100%;
-    margin-bottom:25px;
-  }
-
-}
-/***************  End product ***************/
-
-/***************  Start overlay ***************/
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup #close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  text-align:center;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-/* .overlay {
-  visibility: visible;
-  opacity: 1;
-} */
-
-/***************  End overlay ***************/
+/***************  End Footer ***************/
